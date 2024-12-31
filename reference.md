@@ -1,2 +1,2 @@
-- meta data is stored in the head element
-- 
+- metadata is stored in the head element
+- inline elements like <em> or <strong> does not give a linebreak
