@@ -5,48 +5,164 @@
         <meta name="author" content="Yash Rawat">
         <meta name="description" content="This page contains all the things I am learning how to create as I learn HTML.">
         <title>My First Web Page</title>
-        <link rel="icon" href="html5.png" type="image/x-icon">
+        <link rel="icon" href="img/html5.png" type="image/x-icon">
         <link rel="stylesheet" href="main.css" type="text/css">
-    </head>
+    </head> 
+
     <body>
-        <h1>Verge</h1>
-
+        <header><h1>Verge</h1></header>
         <hr>
 
-        <h2>Apple iphone 16</h2>
-        <img src="img/iphone-16.png" alt="Iphone 16 logo" title="this is an iphone" width="300" height="300">
-
-        <figure>
-            <figcaption>An Example of HTML code</figcaption>
-            <p>
-                <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+        <main>
+            <h2>Apple iphone 16</h2>
+            <img src="img/iphone-16.png" alt="Iphone 16 logo" title="this is an iphone" width="300" height="300">
+            <figure>
+                <figcaption>An Example of HTML code</figcaption>
+                <p>
+                    <code>&lt;h1&gt;Hello World&lt;/h1&gt;</code>
+                </p>
+            </figure>
+            <p>iPhone 16 features a more refined dual-lens array on the back, 
+            with a 48 megapixel Fusion wide-angle lens and 12 megapixel 
+            ultra-wide lens. The cameras are now aligned vertically, 
+            similar to iPhone 12, instead of diagonally like on iPhone 15, 
+            enabling spatial video capture.
             </p>
-        </figure>
-
-        <p>iPhone 16 features a more refined dual-lens array on the back, 
+            <p>iPhone 16 features a more refined dual-lens array on the back, 
             with a 48 megapixel Fusion wide-angle lens and 12 megapixel 
             ultra-wide lens. The cameras are now aligned vertically, 
             similar to iPhone 12, instead of diagonally like on iPhone 15, 
             enabling spatial video capture.
-        </p>
-        <p>iPhone 16 features a more refined dual-lens array on the back, 
-            with a 48 megapixel Fusion wide-angle lens and 12 megapixel 
-            ultra-wide lens. The cameras are now aligned vertically, 
-            similar to iPhone 12, instead of diagonally like on iPhone 15, 
-            enabling spatial video capture.
-        </p>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            </p>
 
-        <h3>Reception</h3>
-        <img src="img/iphone.jpg" alt="another iphone" width="225" height="275" loading="lazy">
-        <p>The iPhone 16 has received positive feedback for several aspects, but also shows a few limitations.
-            <ol>
-            <li>The iPhone 16 has been upgraded in terms of battery capacity.</li>
-            <li> I use resources from <abbr title="Apple Network">Apple</abbr> </li>
-            </ol>
-        </p>
+            <table>
+                <tr>
+                    <th>Fruit</th>
+                    <th>An</th>
+                </tr>
+                <tr>
+                    <td>apple</td>
+                    <td>mango</td>
+                </tr>
+                <tr>
+                    <td>orange</td>
+                    <td>kiwi</td>
+                </tr>
+            </table>
+
+            <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+            <h3>Reception</h3>
+            <img src="img/iphone.jpg" alt="another iphone" width="225" height="275" loading="lazy">
+            <p>The iPhone 16 has received positive feedback for several aspects, but also shows a few limitations.</p>
+                <ol>
+                    <li>The iPhone 16 has been upgraded in terms of battery capacity.</li>
+                    <li> I use resources from <abbr title="Apple Network">Apple</abbr> </li>
+                </ol>
+        </main>
+        <hr>
+
+        <article>
+            <h2>Contact Me</h2>
+            <form action="https://httpbin.org/get" method="get">
+                <fieldset>
+                    <legend>Personal info</legend>
+                <p>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" name="firstName" id="firstName" placeholder="Jane" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" name="lastName" id="lastName" placeholder="Doe" autocomplete="on" required>
+                </p>
+                <p>
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" id="password" placeholder="your secret" required>
+                </p>
+                <p>
+                    <label for="phone">Phone:</label>
+                    <input type="tel" name="phone" id="phone" placeholder="5555555555" pattern="[0-9]{3}[0-9]{3}[0-9]{4}" required>
+                </p><p>
+                    <label for="decade">Favourite decade:</label>
+                    <input type="number" name="decade" id="decade" min="1950" max="2024" step="10" value="1980">
+                </p>
+                <p>
+                    <label for="coffee">Favourite coffee</label>
+                    <select name="coffee" id="coffee" multiple size="5">
+                        <optgroup label="Coffees">
+                            <option value="regular coffee">Regular Coffee</option>
+                            <option value="iced coffee">Iced Coffee</option>
+                        </optgroup>
+                        <optgroup label="Espresso Drinks">
+                            <option value="latte" selected>Latte</option>
+                            <option value="cappucino">Cappuccino</option>
+                            <option value="cortado">Cortado</option>
+                            <option value="americano">Americano</option>
+                        </optgroup>
+                        <option value="others">Others</option>
+                    </select>
+                </p>
+                <!-- <p>
+                    <label for="coffee">Favourite coffee</label>
+                    <input type="text" name="coffee" id="coffee" list="coffee-list">
+                    <datalist id="coffee-list">
+                        <option value="coffee"></option>
+                        <option value="latte"></option>
+                        <option value="espresso"></option>
+                        <option value="cortado"></option>
+                        <option value="americano"></option>
+                        <option value="other"></option>
+                    </datalist>
+                </p> -->
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>What if your favourite food</legend>
+                <p>
+                    <input type="radio" name="food" id="tacos" value="tacos">
+                    <label for="tacos">Tacos</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="sandwich" value="sandwich">
+                    <label for="sandwich">Sandwich</label>
+                </p>
+                <p>
+                    <input type="radio" name="food" id="other" value="other">
+                    <label for="other">Other</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Do you have pets</legend>
+                <p>
+                    <input type="checkbox" name="pets" id="dog" value="dog">
+                    <label for="dog">Dog</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="cat" value="cat">
+                    <label for="cat">Cat</label>
+                </p>
+                <p>
+                    <input type="checkbox" name="pets" id="otherpets" value="otherpets">
+                    <label for="otherpets">Other</label>
+                </p>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Send me a note</legend>
+                <label for="message">Your message</label>
+                <br>
+                <textarea name="message" id="message" cols="30" rows="10" placeholder="Type your message"></textarea>
+            </fieldset>
+            <br>
+            <button type="submit">Submit</button>
+            <button type="submit" formaction="https://httpbin.org/post" formmethod="post">Post</button>
+            <button type="reset">Reset</button>
+            </form>
+        </article>
 
         <hr>
+        <footer>
+            <h1>Yash Rawat</h1>
+        </footer>
     </body>
-
 </html>
